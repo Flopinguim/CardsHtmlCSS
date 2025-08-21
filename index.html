@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desafio Frontend – HTML + CSS + Bootstrap</title>
+  <link rel="shortcut icon" type="imagex/png" href="Images/pokeLogo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-xl">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/Images/PokeLogo.png" alt="Logo" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="py-5 bg-light">
+    <div class="container-xl">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h1 class="display-6 fw-bold mb-3">Tema Livre: Grid de Cards Responsivo</h1>
+          <p class="lead text-muted">Exercício prático de HTML + CSS com atenção a detalhes: header alinhado, 9 cards equidistantes (3×3) e comportamento mobile com 20px de margem lateral, além de um footer customizado.</p>
+          <a class="btn btn-primary btn-lg" href="#cards">Ver Cards</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img class="img-fluid rounded-4 shadow" src="Images/Marshadow.gif" alt="GIF Marshadow dando voadora" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="cards" class="py-5">
+    <div class="container-xl">
+      <div class="row row-cols-1 row-cols-md-3 g-4 cards-grid">
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/mudkip-pokemon.gif" class="card-img-top" alt="Imagem Card 1" />
+            <div class="card-body">
+              <h5 class="card-title">Mudkip</h5>
+              <p class="card-text text-muted">Ama lama mais do que criança em festa de aniversário no sítio. Se tiver água e barro, ele tá feliz.</p>
+              <button class="btn btn-outline-primary" data-card="1">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/mimikyu.gif" class="card-img-top" alt="Imagem Card 2" />
+            <div class="card-body">
+              <h5 class="card-title">Mimikyu</h5>
+              <p class="card-text text-muted">Só queria ser amado… mas o cosplay malfeito garante uns bons sustos de brinde.</p>
+              <button class="btn btn-outline-primary" data-card="2">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/gengar.gif" class="card-img-top" alt="Imagem Card 3" />
+            <div class="card-body">
+              <h5 class="card-title">Gengar</h5>
+              <p class="card-text text-muted">Risada maligna 24h por dia. Se algo sumiu na sua casa, provavelmente ele já tá usando.</p>
+              <button class="btn btn-outline-primary" data-card="3">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="/Images/pokemon-piplup.gif"  class="card-img-top" alt="Imagem Card 4" />
+            <div class="card-body">
+              <h5 class="card-title">Piplup</h5>
+              <p class="card-text text-muted">Não mexe com ele quando tá de mau humor… ou a birra vai ser mais gelada que banho de segunda-feira.</p>
+              <button class="btn btn-outline-primary" data-card="4">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/rowlet.gif" class="card-img-top " alt="Imagem Card 5"/>
+            <div class="card-body">
+              <h5 class="card-title">Rowlet</h5>
+              <p class="card-text text-muted">Especialista em duas coisas: cochilar e comer. Se o lanche sumiu, não precisa procurar muito.</p>
+              <button class="btn btn-outline-primary" data-card="5">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/snorlax-snorlax-pokemon.gif" class="card-img-top" alt="Imagem Card 6" />
+            <div class="card-body">
+              <h5 class="card-title">Snorlax</h5>
+              <p class="card-text text- muted">Profissional em dormir em lugares inconvenientes. Se bloquear a passagem, só acorda com comida ou concerto de berrante.</p>
+              <button class="btn btn-outline-primary" data-card="6">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/pokemon-squirtle.gif" class="card-img-top" alt="Imagem Card 7" />
+            <div class="card-body">
+              <h5 class="card-title">Squirtle</h5>
+              <p class="card-text text- muted">Líder de gangue de óculos escuros nas horas vagas. Se tiver água por perto, já sabe que vem bagunça.</p>
+              <button class="btn btn-outline-primary" data-card="7">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/Psyduck.webp" class="card-img-top" alt="Imagem Card 8" />
+            <div class="card-body">
+              <h5 class="card-title">Psyduck</h5>
+              <p class="card-text text- muted">Pensando em como resolver a vida… mas a enxaqueca não deixa. A cara de confuso é só estilo mesmo.</p>
+              <button class="btn btn-outline-primary" data-card="8">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex">
+          <div class="card w-100 position-relative">
+            <span class="badge-category">Pokémon</span>
+            <img src="Images/meowth.webp" class="card-img-top" alt="Imagem Card 9" />
+            <div class="card-body">
+              <h5 class="card-title">Meowth</h5>
+              <p class="card-text text- muted">Fala mais do que devia e sempre tá arrumando encrenca. Mas no fundo só queria ser promovido pelo chefe.</p>
+              <button class="btn btn-outline-primary" data-card="9">Mais detalhes</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-2 pb-2">
+    <div class="container-xl">
+      <div class="row g-4">
+        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3">
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" aria-label="GitHub"><i class="bi bi-github fs-5"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4 pt-3 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <div>© <span id="year"></span> João Damasceno. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
